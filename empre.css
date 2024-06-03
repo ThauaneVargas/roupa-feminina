@@ -1,0 +1,281 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #c51e64;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  border-radius: 10%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-buttons {
+  margin-right: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/*lupa */
+.header-search {
+  display: flex;
+  align-items: center;
+}
+
+.header-search input {
+  padding: 10px;
+  border: 2px solid #e993ec;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  display: none; /* Inicialmente oculto */
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #e993ec;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #ff0037;
+}
+
+.show-search {
+  display: flex !important; /* Sobrescreve a propriedade display para torná-lo visível */
+}
+
+/* botao */
+.header-search {
+  display: flex;
+  align-items: center;
+}
+
+.header-search input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+  padding: 8px;
+  background-color: #e993ec;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #ff0037;
+}
+
+.header-button {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #e993ec, #ff0037);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #ff0037, #e993ec);
+}
+
+/* Estilo das seções */
+section {
+  padding: 40px;
+  background-color: #fff;
+  color: #333;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section a {
+  color: #e993ec;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #ff0037;
+}
+
+/* Estilo do mapa */
+#localizacao img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.mapa {
+  margin: 0;
+  padding: 15px;
+  text-align: left;
+}
+
+.mapa p {
+  margin-bottom: 5px;
+}
+
+.mapa img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para os ícones */
+#contatos ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contatos ul li {
+  margin-bottom: 10px;
+}
+
+#contatos ul li i {
+  margin-right: 10px;
+  color: #3a4142;
+}
+
+.social-icons li {
+  display: inline-block;
+ margin-right: 10px;
+}
+
+.social-icons li a {
+  color: #e993ec;
+  font-size: 20px;
+}
+
+.social-icons li a:hover {
+  color: #ff0037;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #b462a0;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+/* Media queries para tornar o site responsivo */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .header-buttons {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .header-search input {
+    display: block;
+  }
+
+  .search-button {
+    border-radius: 5px;
+  }
+
+  .button {
+    display: block;
+    margin-top: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  #localizacao img,
+  .mapa img {
+    max-width: 100%;
+  }
+}

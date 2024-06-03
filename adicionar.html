@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="adic.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="./adicionar.html">
+            <img src="./logo.png" alt="Logo da Loja de Roupas Infantis">
+          </a>
+        </div>
+      
+        <div class="header-content">
+          <div class="header-buttons">
+            <nav>
+              <ul>
+                <li><a href="index.html" class="button">Inicio</a></li>
+                <li><a href="produtos.html" class="button">Produtos</a></li>
+                <li><a href="empresa.html" class="button">Empresa</a></li>  
+                <li><a href="minhaco.html" class="button">Minha conta</a></li>
+                <li><a href="adicionar.html" class="button">Adicionar</a></li>
+              </ul>
+            </nav>
+          </div>
+      
+            <div class="header-search">
+                <input type="text" placeholder="Pesquisar" id="search-input">
+                <button class="search-button" onclick="toggleSearchBox()"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Adicionar Produto</h1>
+        <form id="product-form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Preço:</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="image">Imagem:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <button type="submit">Adicionar Produto</button>
+            
+        </form>
+        <div id="product-list"></div>
+    </div>
+
+    <footer class="rodape">
+
+      <div class="container">
+          <div class="linha">
+
+              <div class="rodape-col-1">
+                  <h3>Baixe nosso App</h3>
+                  <p>Baixe nosso aplicativo nas melhores plataformas</p>
+                  <div class="app-logo">
+                      <ion-icon name="logo-google"></ion-icon>
+                      <ion-icon name="logo-google-playstore"></ion-icon>
+                      <img src="" alt="">
+                  </div>
+              </div>
+          <br>
+              <p class="direitos">
+                  &#169; Todos os direitos Reservados a Thauane Vargas
+              </p>
+      </div>
+    </footer>
+
+  <!--Fim rodape-->
+
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=https://maps.app.goo.gl/NGEPPsEKCybAfKcU8" async defer></script>
+<script src="adicio.js"></script>
+</body>
+</html>

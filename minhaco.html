@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roupa infantil</title>
+    <link rel="stylesheet" href="conta.css">
+</head>
+<body>
+
+    <!-- Inicio Banner -->
+    <div class="novoMenu">
+
+        <!--Inicio de container-->
+            <div class="container">
+
+                <!--Inicio navegação-->
+                <div class="navbar">
+
+                    <header>
+                        <div class="logo">
+                          <a href="./adicionar.html">
+                            <img src="./logo.png" alt="Logo da Loja de Roupas Infantis">
+                          </a>
+                        </div>
+                      
+                        <div class="header-content">
+                          <div class="header-buttons">
+                            <nav>
+                              <ul>
+                                <li><a href="index.html" class="button">Inicio</a></li>
+                                <li><a href="produtos.html" class="button">Produtos</a></li>
+                                <li><a href="empresa.html" class="button">Empresa</a></li>  
+                                <li><a href="minhaco.html" class="button">Minha conta</a></li>
+                                <li><a href="adicionar.html" class="button">Adicionar</a></li>
+                              </ul>
+                            </nav>
+                          </div>
+                      
+                            <div class="header-search">
+                                <input type="text" placeholder="Pesquisar" id="search-input">
+                                <button class="search-button" onclick="toggleSearchBox()"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </header>
+
+
+                     <a href="./carrinho.html" title="">
+                        <img src="./img/carrinho2.png" width="30px" height="30px">
+                     </a>
+
+                     <img src="./img/botao-de-menu.png" alt="" class="menu-celular" onclick="menucelular()">
+
+
+                </div>
+            </div>
+
+        <!--Fim de container-->
+
+    </div>
+    <!--Fim de BANNER-->
+
+    <!--Inicio MINHA CONTA-->
+    
+    <div class="minha-conta">
+
+        <div class="container">
+
+            <div class="linha">
+
+                <div class="col-2">
+
+                    <img src="./img/banner1" alt="" width="100%">
+
+                </div>
+
+                <div class="col-2">
+
+                    <div class="formulario">
+
+                        <div class="btn-form">
+                            <span onclick="Entrar()">Entrar</span>
+                            <span onclick="Cadastro()">Cadastro</span>
+                            <hr id="Indicador">
+                        </div>
+
+                        <form action="" method="post" id="EntrarPainel">
+                            <input type="email" name="nome" id="" placeholder="E-mail de acesso">
+                            <input type="password" name="senha" id="" placeholder="Digite sua senha">
+                            <button type="submit" name="senEntrar" class="btn">Entrar</button>
+                            <a href="" title="">Esqueceu sua senha ?</a>
+                        </form>
+
+
+                        <form action="" method="post" id="CadastroSite">
+                            <input type="text" name="nome" id="" placeholder="Nome completo">
+                            <input type="email" name="nome" id="" placeholder="E-mail de acesso">
+                            <input type="password" name="senha" id="" placeholder="Digite sua senha">
+                            <button type="submit" name="senCad" class="btn">Cadastre-se</button>
+                        </form>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Inicio MINHA CONTA-->
+
+
+    <!--Inicio rodape-->
+
+    <footer class="rodape">
+
+        <div class="container">
+            <div class="linha">
+
+                <div class="rodape-col-1">
+                    <h3>Baixe nosso App</h3>
+                    <p>Baixe nosso aplicativo nas melhores plataformas</p>
+                    <div class="app-logo">
+                        <ion-icon name="logo-google"></ion-icon>
+                        <ion-icon name="logo-google-playstore"></ion-icon>
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+                <div class="rodape-col-2">
+                    <img src="./img/Logo.png" alt="">
+                    <p>Nossa marca</p>
+                </div>
+                <div class="rodape-col-3">
+                    <h3>Mais informações</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog</li>
+                        <li>Política de Privacidade</li>
+                        <li>Contatos</li>
+                    </ul>
+                </div>
+                <div class="rodape-col-4">
+                    <h3>Redes sociais</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>You Tube</li>
+                        <li>Whatsapp</li>
+                    </ul>
+                </div>
+
+            </div>
+            <br>
+                <p class="direitos">
+                    &#169; Todos os direitos Reservados a Thauane Vargas
+                </p>
+        </div>
+        
+    </footer>
+
+    <!--Fim rodape-->
+
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="login.js"></script>
+</body>
+</html>

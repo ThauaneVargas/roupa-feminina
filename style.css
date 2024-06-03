@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-padrao: #da4153;
+    --cor-padrao-hover: #e66f41;
+    --cor-fonte: #fff;
+    --cor-fonte-p: #555;
+    --cor-btn: #563434;
+    --cor-btn-hover: #15ff00;
+    --cor-btn-fonte: #000;
+    --cor-fonte-corpo: #555;
+    --cor-fonte-corpo-leve: #777;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #c51e64;
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding: 25px;
+}
+
+.logo img {
+  width: 150px;
+  border-radius: 10%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-buttons {
+  margin-right: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/*lupa */
+.header-search {
+  display: flex;
+  align-items: center;
+}
+
+.header-search input {
+  padding: 10px;
+  border: 2px solid #e993ec;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  display: none; 
+}
+
+.search-button {
+  padding: 10px;
+  background-color: #e993ec;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #ff0037;
+}
+
+.show-search {
+  display: flex 
+}
+
+/* botao */
+.header-search {
+  display: flex;
+  align-items: center;
+}
+
+.header-search input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+  padding: 8px;
+  background-color: #e993ec;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #ff0037;
+}
+
+.header-button {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #e993ec, #ff0037);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #ff0037, #e993ec);
+}
+
+
+
+/*cabecario*/
+.banner {
+    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+}
+
+.banner .linha {
+    margin-top: 70px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbr {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+.banner p {
+    color: var(--cor-fonte);
+}
+
+p{
+    color: var(--cor-fonte-p);
+}
+/* FIM de cabeçario*/
+
+/*meu do site */
+
+.linha {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-2 p{
+    font-weight: 600;
+    color: var(--cor-fonte-corpo);
+}
+
+.btn {
+    text-decoration: none;
+    color: rgb(11, 53, 90);
+    background: rgba(248, 238, 238, 0.658);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: rgb(182, 63, 136);
+    color: var(--cor-fonte);
+}
+
+
+/*designer das imagens */
+
+.categorias {
+    margin: 70px 0;
+}
+
+.corpo-categorias {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*fim das imagens*/
+
+/*produtos*/
+
+.col-4 {
+    flex-basis: 25%;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4:hover {
+    transform: scale(1.1);
+}
+
+.col-4 img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.titulo {
+    position: relative;
+    line-height: 60px;
+    margin: 0 auto 80px;
+    text-align: center;
+    color: var(--cor-fonte-corpo);
+}
+
+.titulo::after {
+    content: '';
+    background-color: #da4153;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h4 {
+    color: var(--cor-fonte-corpo);
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.classificacao ion-icon {
+    color: #f5a320;
+}
+
+
+/*segund parte --- ofertas ----*/
+
+.ofertas {
+    background: radial-gradient(var(--cor-padrao-hover), 
+    var(--cor-padrao));
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .oferta-img {
+    padding: 50px;
+}
+
+small {
+    color: #000;
+}
+
+/** terc partes --- depoimentos--**/
+
+.depoimentos {
+    padding: 100px;    
+}
+
+.depoimentos .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+    cursor: pointer; /*luva de dedo*/
+    transition: transform 0.5s;
+}
+
+.depoimentos .col-3:hover {
+    transform: scale(1.1);
+}
+
+.depoimentos .col-3 img {
+    width: 50px;
+    border-radius: 100%;
+    margin-top: 20px;
+    border: 2px solid var(--cor-padrao);
+}
+
+.depoimento-icone {
+    color:#ee1e36;
+    font-size: 34px;
+}
+
+.col-3 p{
+    font-size: 13px;
+    color: #777;
+    margin: 12px 0;
+}
+
+.depoimentos .col-3 h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b2a2a;
+}
+
+/** marcas **/
+
+.marcas {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+
+/**---------rodape-------**/
+
+.rodape {
+    background: black;
+    color: var(--cor-fonte);
+    padding: 60px 0 20px;
+    font-size: 14px;
+}
+
+.rodape p {
+    color: #fff;
+}
+
+.rodpe h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.rodape-col-1, .rodape-col-2, 
+.rodape-col-3, .rodape-col-4 {
+
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.rodape-col-1 {
+    flex-basis: 30%;
+}
+
+.rodape-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.rodape-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.rodape-col-3, .rodape-col-4 {
+    flex-basis: 12%;
+    text-align: right;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.rodape hr {
+    border: none;
+    height: 1px;
+    background: white;
+    margin: 20px 0;
+}
+
+.direitos {
+    text-align: center;
+}
+
+
+.menu-celular {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/** menu cell no cabecario**/
+
+@media only screen and (max-width: 800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: var(--cor-btn-fonte);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color:#fff;
+    }
+
+    .menu-celular {
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+
+/*----celular ate 600----*/
+
+@media only screen and (max-width: 600px){
+
+    .linha {
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+
+    .col-2 h1{
+        font-size: 27px;
+    }
+
+    .rodape-col-3, .rodape-col-4 {
+        text-align: center;
+    }
+
+    .col-4 p{
+        font-size: 24px;
+    }
+}
